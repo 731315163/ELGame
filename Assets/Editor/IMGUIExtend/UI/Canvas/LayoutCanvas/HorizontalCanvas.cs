@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Editor.IMGUIExtend.UI.LayoutCanvas
+namespace Assets.Editor.IMGUIExtend.UI.Canvas.LayoutCanvas
 {
     /// <summary>
     /// 横向布局

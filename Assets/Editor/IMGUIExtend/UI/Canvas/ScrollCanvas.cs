@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Editor.IMGUIExtend.UI
+namespace Assets.Editor.IMGUIExtend.UI.Canvas
 {
     public class ScrollCanvas:Canvas
     {

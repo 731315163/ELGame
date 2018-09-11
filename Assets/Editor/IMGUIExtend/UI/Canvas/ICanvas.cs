@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-
-namespace Assets.Editor.IMGUIExtend.UI
+namespace Assets.Editor.IMGUIExtend.UI.Canvas
 {
     public interface ICanvas:IGraphic
     {
@@ -14,10 +11,6 @@ namespace Assets.Editor.IMGUIExtend.UI
         /// <param name="pos"></param>
         /// <returns></returns>
         T Find<T>(Vector2 pos) where T :class ,IGraphic;
-        /// <summary>
-        /// 更新UI
-        /// </summary>
-        void Update();
         
         void Add(IGraphic item);
         void Remove(IGraphic item);

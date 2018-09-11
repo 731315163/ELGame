@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Editor.IMGUIExtend.UI
+namespace Assets.Editor.IMGUIExtend.UI.Canvas
 {
     public  class Canvas:ICanvas
     {
 
+       
         public virtual bool IsActive { get; set; }
 
         protected List<IGraphic> m_children = new List<IGraphic>();
-        public virtual void Draw(Rect rect)
+        public ICanvas Father { get; set; }
+        public Canvas()
         {
-            for (var i = 0; i < m_children.Count; i++)
-            {
-                m_children[i].Draw(m_children[i].Rect);
-            }
+            IsActive = true;
         }
+       
         protected Rect m_rect;
         public virtual Rect Rect
         {
@@ -40,7 +37,15 @@ namespace Assets.Editor.IMGUIExtend.UI
                 m_rect = value;
             }
         }
-        public ICanvas Father { get; set; }
+        public virtual void Draw(Rect rect)
+        {
+            for (var i = 0; i < m_children.Count; i++)
+            {
+                m_children[i].Draw(m_children[i].Rect);
+            }
+            
+        }
+       
         public virtual T Find<T>(Vector2 pos) where T : class, IGraphic
         {
             for (var i = 0; i < m_children.Count; i++)
@@ -56,11 +61,7 @@ namespace Assets.Editor.IMGUIExtend.UI
             return default(T);
         }
 
-        public virtual void Update()
-        {
-            if (this.Father != null)
-                this.Father.Update();
-        }
+      
 
         public virtual void Add(IGraphic rect)
         {

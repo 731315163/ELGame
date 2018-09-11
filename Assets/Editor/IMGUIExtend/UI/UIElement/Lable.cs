@@ -1,32 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Assets.Editor.IMGUIExtend.UI.Canvas;
 using IMGUIExtend;
 using UnityEngine;
 
 namespace Assets.Editor.IMGUIExtend.UI.UIElement
 {
-    public enum FontAutoSize
-    {
-        AutoSize,
-        OriginSize,
-        PreferreSize
-    }
+
     public class Lable:IGraphic
     {
         
-        public Rect Rect {get;set; }
-        public bool IsActive { get; set; }
-        public ICanvas Father { get; set; }
-
         protected GUIStyle m_guiStyle;
-        public static Font DefaultFont = Font.CreateDynamicFontFromOSFont("Arial",14); 
-        public GUIStyle GuiStyle
+      
+        public GUIStyle GUIStyle
         {
             get
             {
-                return m_guiStyle;
+                if(m_guiStyle != null)
+                    return m_guiStyle;
+                return GUI.skin.label;
             }
             set
             {
@@ -46,27 +36,35 @@ namespace Assets.Editor.IMGUIExtend.UI.UIElement
             }
         }
 
-        public Lable()
+        public Lable(string text)
         {
-            var Style = new GUIStyle();
-            Style.font = DefaultFont;
-            GuiStyle = Style;
+            this.Text = text;
         }
-        public Lable(Rect rect, string text = null):this()
+        public Lable(Rect rect)
+        {
+            this.Rect = rect;
+        }
+        public Lable(Rect rect, string text = null)
         {
             this.Rect = rect;
             this.Text = text;
-
+            
         }
-        public void Draw(Rect rect)
+
+        public bool IsActive { get; set; }
+        public ICanvas Father { get; set; }
+
+        public  void Draw(Rect rect)
         {
-            GUI.Label(new Rect(rect.position,Rect.size), Text, GuiStyle);
+            GUI.Label(new Rect(rect.position,Rect.size), Text, GUIStyle);
         }
 
         protected void ReSetRect(string s)
         {
-            var v = GuiStyle.font.GetFontSize(s, GuiStyle.fontSize, GuiStyle.fontStyle);
+            var v = GUIStyle.font.GetFontSize(s, GUIStyle.fontSize, GUIStyle.fontStyle);
             this.Rect = new Rect(this.Rect.position, v);
         }
+
+        public Rect Rect { get; set; }
     }
 }
