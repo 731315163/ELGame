@@ -1,0 +1,423 @@
+fileFormatVersion: 2
+guid: 2db38f873494ee844aaa2d1dee6a1316
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: texture_champ_npc_nos_0
+    21300002: texture_champ_npc_nos_1
+    21300004: texture_champ_npc_nos_2
+    21300006: texture_champ_npc_nos_3
+    21300008: texture_champ_npc_nos_4
+    21300010: texture_champ_npc_nos_5
+    21300012: texture_champ_npc_nos_6
+    21300014: texture_champ_npc_nos_7
+    21300016: texture_champ_npc_nos_8
+    21300018: texture_champ_npc_nos_9
+    21300020: texture_champ_npc_nos_10
+    21300022: texture_champ_npc_nos_11
+    21300024: texture_champ_npc_nos_12
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 226
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f41364761ba2ed468b892680c9e2e80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 226
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5719045639497f7438bbd795a2ba56d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 195
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027bace3ac49fd54fa63a783c6311ef0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 195
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ff7d04aa4267b4aaeaf0aee494a78a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 163
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ff536375f56224dadc3b4fc1878e13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 163
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1769b23e3fd7c6f488100edb63747021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 67
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones:
+      - name: root
+        position: {x: 31.988243, y: 2.437912, z: 0}
+        rotation: {x: 0, y: 0, z: 0.71186805, w: 0.70231324}
+        length: 49.531315
+        parentId: -1
+      spriteID: 476c7d018a538314e804f5b2829f5936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 16
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048ccb839cd85aa46bb049caad5753ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 16
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdf7caf294c76843a5539fee0a74123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 18
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d225b0bea033066479a4c5ddfbee635e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 16
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6dfeab1792a5d45b82534de49533a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9a9aab359fe6b45bff649c9ade416a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texture_champ_npc_nos_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 16
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6022ec72639900245bc654f7eb34de70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones:
+    - name: root
+      position: {x: 129.01105, y: 69.021576, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7213814, w: 0.69253796}
+      length: 49.583115
+      parentId: -1
+    - name: bone_1
+      position: {x: -52.59316, y: -24.16279, z: 0}
+      rotation: {x: 0, y: 0, z: 0.007352647, w: 0.99997294}
+      length: 15.189264
+      parentId: 0
+    - name: bone_2
+      position: {x: -54.68918, y: -67.25163, z: 0}
+      rotation: {x: 0, y: 0, z: 0.08401524, w: 0.9964645}
+      length: 11.369098
+      parentId: 0
+    - name: bone_3
+      position: {x: -53.026104, y: -92.61702, z: 0}
+      rotation: {x: 0, y: 0, z: -0.020394878, w: 0.999792}
+      length: 7.751451
+      parentId: 0
+    - name: bone_4
+      position: {x: -56.936398, y: -114.0446, z: 0}
+      rotation: {x: 0, y: 0, z: 0.045862388, w: 0.99894774}
+      length: 10.200059
+      parentId: 0
+    - name: bone_5
+      position: {x: -39.95513, y: 78.87251, z: 0}
+      rotation: {x: 0, y: 0, z: 0.90041864, w: 0.43502447}
+      length: 12.903932
+      parentId: 0
+    - name: bone_6
+      position: {x: 14.852757, y: 0.018597359, z: 0}
+      rotation: {x: 0, y: 0, z: -0.02038903, w: 0.9997921}
+      length: 11.459913
+      parentId: 1
+    spriteID: d020710faa90a8443aaf8ead3841b98f
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
