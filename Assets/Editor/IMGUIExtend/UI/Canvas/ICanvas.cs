@@ -1,16 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Editor.IMGUIExtend.UI.Canvas
 {
     public interface ICanvas:IGraphic
     {
-        /// <summary>
-        /// 查找UI
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="pos"></param>
-        /// <returns></returns>
-        T Find<T>(Vector2 pos) where T :class ,IGraphic;
+
+        IEnumerable< IGraphic> Find(Vector2 pos);
         
         void Add(IGraphic item);
         void Remove(IGraphic item);

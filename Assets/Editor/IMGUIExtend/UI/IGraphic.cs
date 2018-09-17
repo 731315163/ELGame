@@ -7,6 +7,7 @@ namespace Assets.Editor.IMGUIExtend.UI
     {
        
         bool IsActive { get; set; }
+        bool IsRaycast { get; set; }
         ICanvas Father { get; set; }
         void Draw(Rect rect);
     }

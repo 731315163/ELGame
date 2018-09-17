@@ -11,6 +11,7 @@ namespace Assets.Editor.IMGUIExtend.UI.UIElement
         public float Aspect = 0;
         public ScaleMode ScaleMode = ScaleMode.StretchToFill;
         public bool IsActive { get; set; }
+        public bool IsRaycast { get; set; }
         public ICanvas Father { get; set; }
 
 

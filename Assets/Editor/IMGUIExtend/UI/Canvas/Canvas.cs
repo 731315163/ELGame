@@ -8,12 +8,14 @@ namespace Assets.Editor.IMGUIExtend.UI.Canvas
 
        
         public virtual bool IsActive { get; set; }
+        public bool IsRaycast { get; set; }
 
         protected List<IGraphic> m_children = new List<IGraphic>();
         public ICanvas Father { get; set; }
         public Canvas()
         {
             IsActive = true;
+            IsRaycast = false;
         }
        
         protected Rect m_rect;
@@ -46,19 +48,29 @@ namespace Assets.Editor.IMGUIExtend.UI.Canvas
             
         }
        
-        public virtual T Find<T>(Vector2 pos) where T : class, IGraphic
+        public virtual IEnumerable<IGraphic> Find(Vector2 pos) 
         {
             for (var i = 0; i < m_children.Count; i++)
             {
                 if (m_children[i].IsActive && m_children[i].Rect.Contains(pos))
                 {
+                    if (m_children[i].IsRaycast)
+                    {
+                        yield return m_children[i];
+                    }
+
                     var canvas = m_children[i] as ICanvas;
+
                     if (canvas != null)
-                        return canvas.Find<T>(pos);
-                    return m_children[i] as T;
+                    {
+                        foreach (var graphic in canvas.Find(pos))
+                        {
+                            yield return graphic;
+                        }
+                    }
+
                 }
             }
-            return default(T);
         }
 
       

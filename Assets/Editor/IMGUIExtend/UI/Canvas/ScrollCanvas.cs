@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Editor.IMGUIExtend.UI.Canvas
 {
@@ -11,13 +12,17 @@ namespace Assets.Editor.IMGUIExtend.UI.Canvas
             set { Mask = value; }
         }
 
-        public override T Find<T>(Vector2 pos)
+        public ScrollCanvas(Rect mask)
+        {
+            this.Mask = mask;
+        }
+        public override IEnumerable<IGraphic> Find(Vector2 pos)
         {
             pos.x += Mask.x;
             pos.y += Mask.y;
             if (Mask.Contains(pos))
             {
-                return base.Find<T>(pos);
+                return base.Find(pos);
             }
             return null;
         }
